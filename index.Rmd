@@ -1,0 +1,70 @@
+---
+title: "Reproducible reports in R Markdown"
+author: "Jacquie Tran | @jacquietran | 18 Aug 2020"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: xaringan-themer.css
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+---
+
+```{r setup, include=FALSE}
+
+options(htmltools.dir.version = FALSE)
+
+# Load libraries
+library(xaringanthemer)
+library(paletteer)
+
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+
+style_duo_accent_inverse(
+  primary_color = "#E84A5F",
+  secondary_color = "#FF847C"
+)
+```
+
+class: inverse, center, middle
+
+# What makes a report reproducible?
+
+---
+
+> "Statisticians write a lot of reports, describing the results of data analyses.
+>
+> It’s best if such reports are fully reproducible: that **the data and code are available**, and that there’s a **clear and automatic path from data and code to the final report**."
+> 
+> [Karl Broman](https://kbroman.org/Tools4RR/assets/lectures/03_knitr_Rmd_withnotes.pdf)
+
+---
+class: inverse, center, middle
+
+# Why does reproducibility matter?
+
+---
+
+# It matters:
+
+For science
+
+--
+
+For organisations
+
+--
+
+For future you!
+
+---
+class: inverse, center, middle
+
+# Case study
+
+## From pilot project to research programme
+
