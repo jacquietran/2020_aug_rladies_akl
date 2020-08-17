@@ -13,6 +13,7 @@ class: center, middle, inverse, title-slide
 
 # Reproducible reports in R Markdown
 ### Jacquie Tran | <span class="citation">@jacquietran</span> | 18 Aug 2020
+### bit.ly/jt_rladies_2020
 
 ---
 
@@ -45,15 +46,6 @@ Image credit: [Emil Widlund](https://unsplash.com/photos/ZtI4l8EvyUw)
 class: inverse, center, middle
 
 # What makes a report reproducible?
-
----
-class: middle
-
-&gt; "Statisticians write a lot of reports, describing the results of data analyses.
-&gt;
-&gt; It’s best if such reports are fully reproducible: that **the data and code are available**, and that there’s a **clear and automatic path from data and code to the final report**."
-&gt; 
-&gt; Karl Broman | https://kbroman.org/Tools4RR/assets/lectures/03_knitr_Rmd_withnotes.pdf
 
 ---
 
@@ -89,7 +81,7 @@ class: inverse, center, middle
 
 ![](https://raw.githubusercontent.com/jacquietran/2020_aug_rladies_akl/master/images/penguins_example_screenshot_01.PNG)
 
-[Live demo of HTML output](https://jacquietran.github.io/2020_aug_rladies_akl/penguins_example.html)
+[**Live demo of HTML output**](https://jacquietran.github.io/2020_aug_rladies_akl/penguins_example.html)
 
 ---
 
@@ -100,7 +92,7 @@ class: inverse, center, middle
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-[Live demo of HTML output](https://jacquietran.github.io/2020_aug_rladies_akl/penguins_example_echoed.html)
+[**Live demo of HTML output**](https://jacquietran.github.io/2020_aug_rladies_akl/penguins_example_echoed.html)
 
 ---
 class: inverse, center, middle
@@ -116,7 +108,7 @@ class: inverse, center, middle
 
 --
 
-Within the Rmd, source the script from within a code chunk:
+In the R Markdown file, source the script from within a code chunk:
 
 
 ```r
@@ -131,11 +123,11 @@ class: inverse, center, middle
 
 ---
 
-## Build reports on a set schedule (e.g., daily, weekly, monthly)
+## Build reports on a set schedule
+
+[**Job scheduling R Markdown reports via R**](https://beta.rstudioconnect.com/content/3132/Job_Scheduling_R_Markdown_Reports_via_R.html)
 
 ![](https://raw.githubusercontent.com/jacquietran/2020_aug_rladies_akl/master/images/scheduling.PNG)
-
-[Job scheduling R Markdown reports via R](https://beta.rstudioconnect.com/content/3132/Job_Scheduling_R_Markdown_Reports_via_R.html)
 
 ---
 class: inverse, center, middle
@@ -147,16 +139,32 @@ class: inverse, center, middle
 
 ## Rmd: One file format, many outputs!
 
-Render an R Markdown report to **HTML**, **PDF**, and **Word** outputs
+Render an R Markdown report to:
+
+- **HTML**
+- **PDF**
+- **Word**
+
+---
+
+## HTML outputs are particularly powerful
+
+Turn an R Markdown file into:
+
+- A **slidedeck** (like this one!) using `{xaringan}`
 
 --
 
-**HTML outputs** are particularly powerful. Turn an R Markdown file into:
+- An **interactive dashboard** using `{flexdashboard}`
 
-- A slidedeck like this one using `{xaringan}`
-- An interactive dashboard using packages like `{flexdashboard}`
-- An e-book using `{bookdown}`
-- A website using packages like `{blogdown}` and `{distill}`
+--
+
+
+- An **e-book** using `{bookdown}`
+
+--
+
+- A **website** using packages like `{blogdown}` and `{distill}`
 
 ---
 
@@ -173,9 +181,13 @@ Tom Mock:
 - The Mockup Blog, [How I share knowledge around R Markdown](https://themockup.blog/posts/2020-07-25-meta-rmarkdown/)
 - [Higher, further, faster with marvelous R Markdown](https://bit.ly/marvelRMD), presented at the 2020 New York R Conference
 
-### Looking for this slidedeck?
+--
 
-[jacquietran.github.io/2020_aug_rladies_akl/](https://jacquietran.github.io/2020_aug_rladies_akl)
+### Looking for this slidedeck + related files?
+
+Slides: [bit.ly/jt_rladies_2020](https://bit.ly/jt_rladies_2020)
+
+GitHub repo: [https://github.com/jacquietran/2020_aug_rladies_akl](https://github.com/jacquietran/2020_aug_rladies_akl)
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
