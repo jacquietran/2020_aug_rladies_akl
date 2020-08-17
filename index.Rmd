@@ -110,8 +110,6 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```
 
---
-
 [Live demo of HTML output](https://jacquietran.github.io/2020_aug_rladies_akl/penguins_example_echoed.html)
 
 ---
@@ -124,33 +122,11 @@ class: inverse, center, middle
 
 ## Source scripts into an R Markdown file
 
-```{r code_inline, echo = TRUE, eval = FALSE}
-
-# Install the {ggplot2} package if you need to:
-# install.packages("ggplot2)
-
-# Load ggplot2 for plotting
-library(ggplot2)
-
-# Make a plot using the penguins data
-p <- ggplot(
-  data = penguins,
-  aes(x = body_mass_g, y = species, colour = species))
-p <- p + geom_boxplot(width = 0.5, size = 1)
-p <- p + geom_jitter(height = 0.2, alpha = 0.5, size = 3)
-
-# Display the plot
-p
-
-```
-
-Store this code in a separate script file, then source the script into Rmd!
-
----
-
-## Source scripts into an R Markdown file
-
 ![](https://raw.githubusercontent.com/jacquietran/2020_aug_rladies_akl/master/images/penguins_example_screenshot_03.PNG)
+
+--
+
+Within the Rmd, source the script from within a code chunk:
 
 ```{r code_sourced, echo = TRUE, eval = FALSE}
 
@@ -166,8 +142,11 @@ class: inverse, center, middle
 
 ---
 
-## Documented routines for tidying data
+## Build reports on a set schedule (e.g., daily, weekly, monthly)
 
+![](https://raw.githubusercontent.com/jacquietran/2020_aug_rladies_akl/master/images/scheduling.PNG)
+
+[Job scheduling R Markdown reports via R](https://beta.rstudioconnect.com/content/3132/Job_Scheduling_R_Markdown_Reports_via_R.html)
 
 ---
 class: inverse, center, middle
@@ -179,7 +158,16 @@ class: inverse, center, middle
 
 ## Rmd: One file format, many outputs!
 
+Render an R Markdown report to **HTML**, **PDF**, and **Word** outputs
 
+--
+
+**HTML outputs** are particularly powerful. Turn an R Markdown file into:
+
+- A slidedeck like this one using `{xaringan}`
+- An interactive dashboard using packages like `{flexdashboard}`
+- An e-book using `{bookdown}`
+- A website using packages like `{blogdown}` and `{distill}`
 
 ---
 
