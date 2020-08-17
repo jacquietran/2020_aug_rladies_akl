@@ -184,6 +184,6 @@ Tom Mock:
 - The Mockup Blog, [How I share knowledge around R Markdown](https://themockup.blog/posts/2020-07-25-meta-rmarkdown/)
 - [Higher, further, faster with marvelous R Markdown](https://bit.ly/marvelRMD), presented at the 2020 New York R Conference
 
-*****
+### Looking for this slidedeck?
 
-These slides: [jacquietran.github.io/2020_aug_rladies_akl/]()
+[jacquietran.github.io/2020_aug_rladies_akl/](https://jacquietran.github.io/2020_aug_rladies_akl)

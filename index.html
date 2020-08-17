@@ -100,8 +100,6 @@ class: inverse, center, middle
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
---
-
 [Live demo of HTML output](https://jacquietran.github.io/2020_aug_rladies_akl/penguins_example_echoed.html)
 
 ---
@@ -114,32 +112,11 @@ class: inverse, center, middle
 
 ## Source scripts into an R Markdown file
 
-
-```r
-# Install the {ggplot2} package if you need to:
-# install.packages("ggplot2)
-
-# Load ggplot2 for plotting
-library(ggplot2)
-
-# Make a plot using the penguins data
-p &lt;- ggplot(
-  data = penguins,
-  aes(x = body_mass_g, y = species, colour = species))
-p &lt;- p + geom_boxplot(width = 0.5, size = 1)
-p &lt;- p + geom_jitter(height = 0.2, alpha = 0.5, size = 3)
-
-# Display the plot
-p
-```
-
-Store this code in a separate script file, then source the script into Rmd!
-
----
-
-## Source scripts into an R Markdown file
-
 ![](https://raw.githubusercontent.com/jacquietran/2020_aug_rladies_akl/master/images/penguins_example_screenshot_03.PNG)
+
+--
+
+Within the Rmd, source the script from within a code chunk:
 
 
 ```r
@@ -154,8 +131,11 @@ class: inverse, center, middle
 
 ---
 
-## Documented routines for tidying data
+## Build reports on a set schedule (e.g., daily, weekly, monthly)
 
+![](https://raw.githubusercontent.com/jacquietran/2020_aug_rladies_akl/master/images/scheduling.PNG)
+
+[Job scheduling R Markdown reports via R](https://beta.rstudioconnect.com/content/3132/Job_Scheduling_R_Markdown_Reports_via_R.html)
 
 ---
 class: inverse, center, middle
@@ -167,7 +147,16 @@ class: inverse, center, middle
 
 ## Rmd: One file format, many outputs!
 
+Render an R Markdown report to **HTML**, **PDF**, and **Word** outputs
 
+--
+
+**HTML outputs** are particularly powerful. Turn an R Markdown file into:
+
+- A slidedeck like this one using `{xaringan}`
+- An interactive dashboard using packages like `{flexdashboard}`
+- An e-book using `{bookdown}`
+- A website using packages like `{blogdown}` and `{distill}`
 
 ---
 
@@ -184,9 +173,9 @@ Tom Mock:
 - The Mockup Blog, [How I share knowledge around R Markdown](https://themockup.blog/posts/2020-07-25-meta-rmarkdown/)
 - [Higher, further, faster with marvelous R Markdown](https://bit.ly/marvelRMD), presented at the 2020 New York R Conference
 
-*****
+### Looking for this slidedeck?
 
-These slides: [jacquietran.github.io/2020_aug_rladies_akl/]()
+[jacquietran.github.io/2020_aug_rladies_akl/](https://jacquietran.github.io/2020_aug_rladies_akl)
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
