@@ -98,6 +98,8 @@ class: inverse, center, middle
 
 ![](https://raw.githubusercontent.com/jacquietran/2020_aug_rladies_akl/master/images/penguins_example_screenshot_01.PNG)
 
+[Live demo of HTML output](https://jacquietran.github.io/2020_aug_rladies_akl/penguins_example.html)
+
 ---
 
 ## Show your "working out"
@@ -111,6 +113,8 @@ knitr::opts_chunk$set(echo = TRUE)
 --
 
 ![](https://raw.githubusercontent.com/jacquietran/2020_aug_rladies_akl/master/images/penguins_example_screenshot_02.PNG)
+
+[Live demo of HTML output](https://jacquietran.github.io/2020_aug_rladies_akl/penguins_example_echoed.html)
 
 ---
 class: inverse, center, middle
