@@ -25,7 +25,7 @@ library(paletteer)
 ```{r xaringan-themer, include=FALSE, warning=FALSE}
 
 style_duo_accent_inverse(
-  primary_color = "#E84A5F",
+  primary_color = "#A7DBD8",
   secondary_color = "#FF847C"
 )
 ```
@@ -49,28 +49,6 @@ background-image: url(https://raw.githubusercontent.com/jacquietran/2020_aug_rla
 background-size: 35%
 
 Image credit: [Emil Widlund](https://unsplash.com/photos/ZtI4l8EvyUw)
-
----
-
-## Starting from the middle of a data project
-
-Where are all the project files stored?
-
---
-
-Where did the data come from?
-
---
-
-What was done to the data?
-
---
-
-What analytical choices were made and why?
-
---
-
-How were the data outputs produced?
 
 ---
 class: inverse, center, middle
@@ -111,135 +89,60 @@ The Carpentries, [Reproducible Research with R](https://datacarpentry.org/rr-int
 ---
 class: inverse, center, middle
 
-# Case study
+## R Markdown for
+# Documentation
 
 ---
 
-## Familiarising with a pilot project
-
-Where are all the project files stored?
-
---
-> On **one person's local machine**.
-
-Where did the data come from?
-
---
-> **Spreadsheets** exported from SurveyMonkey.
-
---
-
-What was done to the data?
-
---
-> Data cleaning in **Excel (point-and-click)**; statistical analyses in **Stata**.
-
---
-
-What analytical choices were made and why?
-
---
-> **?????**
-
---
-
-How were the data outputs produced?
-
---
-> Report written in **Word**; plots generated in Excel and **copied from Excel into Word**; statistical results **typed into Word**.
-
----
-class: inverse, center, middle
-
-## Take the same project, but make it ~~fashion~~ *reproducible*
+## Document as you go!
 
 ---
 
-## Where are all the project files stored?
+## Show your "working out"
 
-**GitHub** repository for all code and code-related documentation.
+```{r knitr_options, echo = FALSE}
 
----
-
-## Where does the data come from?
-
-Data is pulled from the SurveyMonkey API into a **SQL datamart**
-
---
-
-Data is retrieved using the **{RODBC}** package in an **R Markdown** file.
-
---
-
-```{r, eval = FALSE}
-
-library(RODBC)
-
-# Create object for connecting to the SQL datamart -----------------------------
-
-con <- odbcConnect("datamart_name", uid = "username", pwd = "password")
-
-# Import data from SQL datamart ------------------------------------------------
-
-source_data <- sqlQuery(
-  con, "SELECT * FROM [datamart].[schema].[view]")
+knitr::opts_chunk$set(echo = TRUE)
 
 ```
 
 ---
 
-## What is done to the data?
-
-Data cleaning in **SQL**.
-
-Additional wrangling, analyses, and plots within the **R Markdown** file.
-
----
-
-## What analytical choices were made and why?
-
-Choices are documented in:
-
-- GitHub issues
-- Markdown files in the GitHub repo
-- Comments embedded into the R Markdown file.
-
----
-
-## How were the data outputs produced?
-
-Knit the R Markdown file to Word, et voila!
-
----
-
-## Benefits of a more reproducible approach
-
-Retrace our own steps
-
---
-
-Enables teamwork
-
---
-
-Version control
-
---
-
-Rigour
-
---
-
-Speed
-
---
-
-Modularity
+## Show your "working out"
 
 ---
 class: inverse, center, middle
 
-# Start the way you mean to go on!
+## R Markdown for
+# Organisation
+
+---
+
+## Organisation
+
+
+
+---
+class: inverse, center, middle
+
+## R Markdown for
+# Automation
+
+---
+
+## Automation
+
+---
+class: inverse, center, middle
+
+## R Markdown for
+# Dissemination
+
+---
+
+## Dissemination
+
+
 
 ---
 
@@ -251,4 +154,7 @@ Yihui Xie, J.J. Allaire, & Garrett Grolemund, [R Markdown: The Definitive Guide]
 
 Emily Riederer, [R Markdown Driven Development](https://emilyriederer.netlify.app/post/rmarkdown-driven-development/)
 
-The Mockup Blog (Tom Mock), [How I share knowledge around R Markdown](https://themockup.blog/posts/2020-07-25-meta-rmarkdown/)
+Tom Mock:
+
+- The Mockup Blog, [How I share knowledge around R Markdown](https://themockup.blog/posts/2020-07-25-meta-rmarkdown/)
+- [Higher, further, faster with marvelous R Markdown](https://bit.ly/marvelRMD), presented at the 2020 New York R Conference

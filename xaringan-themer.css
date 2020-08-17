@@ -43,7 +43,7 @@
 
   /* Colors */
   --text-color: #FFFFFF;
-  --header-color: #E84A5F;
+  --header-color: #A7DBD8;
   --background-color: #000000;
   --link-color: #FF847C;
   --text-bold-color: #FF847C;
@@ -51,11 +51,11 @@
   --inverse-text-color: #000000;
   --inverse-background-color: #FF847C;
   --inverse-header-color: #000000;
-  --title-slide-background-color: #E84A5F;
+  --title-slide-background-color: #A7DBD8;
   --title-slide-text-color: #000000;
-  --header-background-color: #E84A5F;
+  --header-background-color: #A7DBD8;
   --header-background-text-color: #000000;
-  --primary: #E84A5F;
+  --primary: #A7DBD8;
   --secondary: #FF847C;
   --white: #FFFFFF;
   --black: #000000;
@@ -102,7 +102,7 @@ h1, h2, h3 {
   color: #FF847C;
 }
 .remark-slide-number {
-  color: #E84A5F;
+  color: #A7DBD8;
   opacity: 1;
   font-size: 0.9em;
 }
@@ -144,10 +144,10 @@ a, a > code {
   float: left;
 }
 .left-column h2, .left-column h3 {
-  color: #E84A5F99;
+  color: #A7DBD899;
 }
 .left-column h2:last-of-type, .left-column h3:last-child {
-  color: #E84A5F;
+  color: #A7DBD8;
 }
 .right-column {
   width: 75%;
