@@ -1,0 +1,40 @@
+---
+title: "My cool project"
+author: "Jacquie Tran"
+date: "18 August 2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+Let's take a look at some data using the **{palmerpenguins}** R package by [Allison Horst](https://github.com/allisonhorst/palmerpenguins). First, load up the package itself.
+
+```{r load_package}
+
+# Install the {palmerpenguins} package if you need to:
+# install.packages("palmerpenguins")
+
+library(palmerpenguins)
+
+```
+
+Now check the first few rows of the penguins data set that is included in the **{palmerpenguins}** package.
+
+```{r check_penguins_data}
+
+head(penguins)
+
+```
+
+Finish with a plot of penguin body mass by species!
+
+```{r plot_penguins_data}
+
+source(here::here("plot_penguins.R"))
+
+```
+

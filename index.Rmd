@@ -112,8 +112,6 @@ knitr::opts_chunk$set(echo = TRUE)
 
 --
 
-![](https://raw.githubusercontent.com/jacquietran/2020_aug_rladies_akl/master/images/penguins_example_screenshot_02.PNG)
-
 [Live demo of HTML output](https://jacquietran.github.io/2020_aug_rladies_akl/penguins_example_echoed.html)
 
 ---
@@ -124,11 +122,41 @@ class: inverse, center, middle
 
 ---
 
-## Use code chunks to create structure
+## Source scripts into an R Markdown file
+
+```{r code_inline, echo = TRUE, eval = FALSE}
+
+# Install the {ggplot2} package if you need to:
+# install.packages("ggplot2)
+
+# Load ggplot2 for plotting
+library(ggplot2)
+
+# Make a plot using the penguins data
+p <- ggplot(
+  data = penguins,
+  aes(x = body_mass_g, y = species, colour = species))
+p <- p + geom_boxplot(width = 0.5, size = 1)
+p <- p + geom_jitter(height = 0.2, alpha = 0.5, size = 3)
+
+# Display the plot
+p
+
+```
+
+Store this code in a separate script file, then source the script into Rmd!
 
 ---
 
 ## Source scripts into an R Markdown file
+
+![](https://raw.githubusercontent.com/jacquietran/2020_aug_rladies_akl/master/images/penguins_example_screenshot_03.PNG)
+
+```{r code_sourced, echo = TRUE, eval = FALSE}
+
+source(here::here("plot_penguins.R"))
+
+```
 
 ---
 class: inverse, center, middle
