@@ -96,19 +96,21 @@ class: inverse, center, middle
 
 ## Document as you go!
 
+![](https://raw.githubusercontent.com/jacquietran/2020_aug_rladies_akl/master/images/penguins_example_screenshot_01.PNG)
+
 ---
 
 ## Show your "working out"
 
-```{r knitr_options, echo = FALSE}
+```{r knitr_options, echo = TRUE, eval = FALSE}
 
 knitr::opts_chunk$set(echo = TRUE)
 
 ```
 
----
+--
 
-## Show your "working out"
+![](https://raw.githubusercontent.com/jacquietran/2020_aug_rladies_akl/master/images/penguins_example_screenshot_02.PNG)
 
 ---
 class: inverse, center, middle
@@ -118,9 +120,11 @@ class: inverse, center, middle
 
 ---
 
-## Organisation
+## Use code chunks to create structure
 
+---
 
+## Source scripts into an R Markdown file
 
 ---
 class: inverse, center, middle
@@ -130,7 +134,8 @@ class: inverse, center, middle
 
 ---
 
-## Automation
+## Documented routines for tidying data
+
 
 ---
 class: inverse, center, middle
@@ -140,7 +145,7 @@ class: inverse, center, middle
 
 ---
 
-## Dissemination
+## Rmd: One file format, many outputs!
 
 
 
@@ -158,3 +163,7 @@ Tom Mock:
 
 - The Mockup Blog, [How I share knowledge around R Markdown](https://themockup.blog/posts/2020-07-25-meta-rmarkdown/)
 - [Higher, further, faster with marvelous R Markdown](https://bit.ly/marvelRMD), presented at the 2020 New York R Conference
+
+*****
+
+These slides: [jacquietran.github.io/2020_aug_rladies_akl/]()
